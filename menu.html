@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu & Stan - Dikantin Polije</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Panggil semua CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/konten.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Dikantin">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <!-- Dropdown Panduan -->
+                <li class="dropdown">
+                    <button class="dropdown-btn">Panduan Kantin &#9662;</button>
+                    <div class="dropdown-content">
+                        <a href="panduan_pesan.html">Panduan Pesan & Transaksi</a>
+                        <a href="panduan_login.html">Tata Cara Login</a>
+                    </div>
+                </li>
+                <li><a href="menu.html" class="active">Menu & Stan</a></li>
+                <li><a href="kontak.html">Kontak & Bantuan</a></li>
+                
+                <li class="nav-btn-mobile">
+                    <a href="#" target="_blank" class="btn btn-primary">Pesan Sekarang</a>
+                </li>
+            </ul>
+            <a href="#" target="_blank" class="btn btn-primary nav-btn-desktop">Pesan Sekarang</a>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== BAGIAN 1: DAFTAR KANTIN (AWAL) ==================== -->
+    <div id="daftar-kantin-view">
+        <section class="page-section">
+            <div class="container">
+                <h2 class="page-title">Pilih Stan Kantin</h2>
+                <p class="page-subtitle">Klik salah satu kantin di bawah ini untuk melihat profil dan menu lengkapnya.</p>
+
+                <!-- Grid 5 Kolom -->
+                <div class="menu-grid" style="grid-template-columns: repeat(5, 1fr);">
+                    
+                    <!-- Kantin 1 -->
+                    <div class="kantin-card" onclick="bukaKantin(1)">
+                        <img src="img/kantin-1.jpg" alt="Kantin 1">
+                        <div class="card-body">
+                            <h3>Kantin 1</h3>
+                            <p class="kantin-desc">Masakan rumahan</p>
+                        </div>
+                    </div>
+                    <!-- Kantin 2 -->
+                    <div class="kantin-card" onclick="bukaKantin(2)">
+                        <img src="img/kantin-2.jpg" alt="Kantin 2">
+                        <div class="card-body">
+                            <h3>Kantin 2</h3>
+                            <p class="kantin-desc">Mie ayam & bakso</p>
+                        </div>
+                    </div>
+                    <!-- Kantin 3 -->
+                    <div class="kantin-card" onclick="bukaKantin(3)">
+                        <img src="img/kantin-3.jpg" alt="Kantin 3">
+                        <div class="card-body">
+                            <h3>Kantin 3</h3>
+                            <p class="kantin-desc">Ayam geprek</p>
+                        </div>
+                    </div>
+                    <!-- Kantin 4 -->
+                    <div class="kantin-card" onclick="bukaKantin(4)">
+                        <img src="img/kantin-4.jpg" alt="Kantin 4">
+                        <div class="card-body">
+                            <h3>Kantin 4</h3>
+                            <p class="kantin-desc">Sate & soto</p>
+                        </div>
+                    </div>
+                    <!-- Kantin 5 -->
+                    <div class="kantin-card" onclick="bukaKantin(5)">
+                        <img src="img/kantin-5.jpg" alt="Kantin 5">
+                        <div class="card-body">
+                            <h3>Kantin 5</h3>
+                            <p class="kantin-desc">Nasi padang</p>
+                        </div>
+                    </div>
+                    <!-- Kantin 6 -->
+                    <div class="kantin-card" onclick="bukaKantin(6)">
+                        <img src="img/kantin-6.jpg" alt="Kantin 6">
+                        <div class="card-body">
+                            <h3>Kantin 6</h3>
+                            <p class="kantin-desc">Kwetiau & capcay</p>
+                        </div>
+                    </div>
+                    <!-- Kantin 7 -->
+                    <div class="kantin-card" onclick="bukaKantin(7)">
+                        <img src="img/kantin-7.jpg" alt="Kantin 7">
+                        <div class="card-body">
+                            <h3>Kantin 7</h3>
+                            <p class="kantin-desc">Pecel lele</p>
+                        </div>
+                    </div>
+                    <!-- Kantin 8 -->
+                    <div class="kantin-card" onclick="bukaKantin(8)">
+                        <img src="img/kantin-8.jpg" alt="Kantin 8">
+                        <div class="card-body">
+                            <h3>Kantin 8</h3>
+                            <p class="kantin-desc">Minuman segar</p>
+                        </div>
+                    </div>
+                    <!-- Kantin 9 -->
+                    <div class="kantin-card" onclick="bukaKantin(9)">
+                        <img src="img/kantin-9.jpg" alt="Kantin 9">
+                        <div class="card-body">
+                            <h3>Kantin 9</h3>
+                            <p class="kantin-desc">Gorengan & roti</p>
+                        </div>
+                    </div>
+                    <!-- Kantin 10 -->
+                    <div class="kantin-card" onclick="bukaKantin(10)">
+                        <img src="img/kantin-10.jpg" alt="Kantin 10">
+                        <div class="card-body">
+                            <h3>Kantin 10</h3>
+                            <p class="kantin-desc">Menu sehat</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- ==================== BAGIAN 2: PROFIL STAN DETAIL (DISEMBUNYIKAN DULU) ==================== -->
+    <!-- Defaultnya pakai style display: none -->
+    <div id="detail-stan-view" style="display: none;">
+        
+        <!-- Header Halaman Stan -->
+        <section class="page-header">
+            <div class="container">
+                <!-- Tombol kembali ke daftar kantin -->
+                <button onclick="kembaliKeDaftar()" class="btn btn-outline" style="border-color: #0B1E36; color: #0B1E36; margin-bottom: 20px; padding: 8px 16px;">
+                    &larr; Kembali ke Daftar Stan
+                </button>
+                <h1 id="judul-stan">Nama Kantin</h1>
+                <p>Kenali profil dari setiap stan kantin kampus. Pemesanan dilakukan di aplikasi.</p>
+            </div>
+        </section>
+
+        <!-- Profil Stan -->
+        <div class="container">
+            <div class="stan-profile">
+                <div class="stan-image">
+                    <!-- Gambar akan diganti oleh JS -->
+                    <img id="img-stan" src="img/kantin-1.jpg" alt="Foto Stan">
+                </div>
+                <div class="stan-info">
+                    <h2 id="nama-stan">Kantin</h2>
+                    <p><strong>Deskripsi</strong><br><span id="desc-stan">Menyediakan aneka macam makanan dan minuman.</span></p>
+                    
+                    <div class="stan-jam">
+                        <div>
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Jumat</p>
+                            <p>Sabtu - Minggu</p>
+                        </div>
+                        <div style="text-align: right;">
+                            <h4>&nbsp;</h4>
+                            <p>08.00 - 16.00</p>
+                            <p>Tutup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daftar Menu Makanan & Minuman -->
+        <section class="menu-list-section">
+            <div class="container">
+                <h2 class="section-title">Menu</h2>
+                <p style="color: #666; margin-bottom: 30px;">Pilihan makanan dan minuman di stan ini.</p>
+
+                <!-- Makanan -->
+                <h3 class="menu-category-title">Makanan</h3>
+                <div class="menu-cards" id="list-makanan">
+                    <!-- Diisi oleh JS -->
+                </div>
+
+                <!-- Minuman -->
+                <h3 class="menu-category-title">Minuman</h3>
+                <div class="menu-cards" id="list-minuman">
+                    <!-- Diisi oleh JS -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dikantin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Panggil script untuk navbar (hamburger) -->
+    <script src="js/script.js"></script>
+    
+    <!-- Panggil script khusus untuk halaman menu -->
+    <script src="js/menu.js"></script>
+</body>
+</html>

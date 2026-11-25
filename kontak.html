@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak & Bantuan - Dikantin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/konten.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li class="dropdown">
+                    <button class="dropdown-btn">Panduan Kantin &#9662;</button>
+                    <div class="dropdown-content">
+                        <a href="panduan_pesan.html">Panduan Pesan & Transaksi</a>
+                        <a href="panduan_login.html">Tata Cara Login</a>
+                    </div>
+                </li>
+                <li><a href="menu.html">Menu & Stan</a></li>
+                <li><a href="kontak.html" class="active">Kontak & Bantuan</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- KONTEN KONTAK -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-title">Kontak & Bantuan</h2>
+            <p class="page-subtitle">Punya kendala saat memesan? Atau ingin menyampaikan saran? Hubungi kami.</p>
+
+            <div class="kontak-wrapper">
+                <!-- Info Kontak (Kiri) -->
+                <div class="kontak-info">
+                    <h3>Hubungi Kami</h3>
+                    <p>Tim support Dikantin siap membantu kamu pada jam operasional kampus.</p>
+                    
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Gedung A, Politeknik Negeri Jember</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <h4>WhatsApp / Telepon</h4>
+                            <p>0812-3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>support@dikantin.ac.id</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Bantuan (Kanan) -->
+                <div class="kontak-form">
+                    <h3>Kirim Pesan</h3>
+                    <form action="#" onsubmit="alert('Pesan berhasil dikirim!'); return false;">
+                        <div class="form-group">
+                            <label>Nama Lengkap</label>
+                            <input type="text" placeholder="Masukkan nama kamu" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Masukkan email aktif" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Pesan / Kendala</label>
+                            <textarea rows="4" placeholder="Tuliskan pesan atau kendalamu di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2024 Dikantin. All rights reserved.</p></div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

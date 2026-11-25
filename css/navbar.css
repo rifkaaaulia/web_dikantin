@@ -1,0 +1,112 @@
+/* ========== NAVBAR (Biru Gelap) ========== */
+.navbar {
+    background: rgba(11, 30, 54, 0.95); /* Biru gelap transparan */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.logo img { height: 45px; width: auto; }
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu a, .dropdown-btn {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #d1e0f0; /* Warna teks agak putih kebiruan */
+    transition: color 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding-bottom: 5px;
+}
+
+.nav-menu a:hover, .nav-menu a.active, .dropdown-btn:hover {
+    color: #fff;
+}
+
+/* Garis bawah untuk menu yang aktif */
+.nav-menu a.active {
+    border-bottom: 2px solid #1C5A8A;
+}
+
+/* ========== DROPDOWN PANDUAN (Sudah Diperbaiki) ========== */
+
+/* 1. Bungkus dropdown pakai padding biar area hover-nya nyambung ke bawah */
+.dropdown { 
+    position: relative; 
+    padding-bottom: 15px; /* Jarak ini yang bikin nyambung */
+    margin-bottom: -15px; /* Trik biar layout navbar nggak berubah */
+}
+
+/* 2. Kotak Putih Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 220px; /* Lebarin dikit biar teksnya muat */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    /* margin-top DIHAPUS agar nyambung ke tombol */
+}
+
+/* 3. Teks di dalam kotak putih */
+.dropdown-content a {
+    display: block;
+    color: #333;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    border-bottom: none; 
+    transition: background 0.2s;
+}
+
+.dropdown-content a:hover {
+    background: #f0f4f8;
+    color: #1C5A8A;
+    font-weight: 600;
+}
+
+/* 4. Munculkan saat di-hover */
+.dropdown:hover .dropdown-content { 
+    display: block; 
+} 
+
+/* ========== TOMBOL & HAMBURGER ========== */
+.nav-btn-desktop { font-size: 0.85rem; padding: 10px 20px; }
+.nav-btn-mobile { display: none; }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff; /* Warna putih karena background navbar gelap */
+    border-radius: 3px;
+    transition: all 0.3s;
+}

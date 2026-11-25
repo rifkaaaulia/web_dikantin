@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Dikantin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/konten.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Dikantin">
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <!-- Dropdown Panduan -->
+                <li class="dropdown">
+                    <button class="dropdown-btn">Panduan Kantin &#9662;</button>
+                    <!-- Hanya satu div dropdown-content -->
+                    <div class="dropdown-content">
+                        <a href="panduan_pesan.html">Panduan Pesan & Transaksi</a>
+                        <a href="panduan_login.html">Tata Cara Login</a>
+                    </div>
+                </li>
+                <li><a href="menu.html">Menu & Stan</a></li>
+                <li><a href="kontak.html">Kontak & Bantuan</a></li>
+                <li class="nav-btn-mobile">
+                    <a href="#" target="_blank" class="btn btn-primary">Pesan Sekarang</a>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-section">
+        <div class="container">
+            <h2 class="page-title">Tentang Kami</h2>
+            <p class="page-subtitle">Mengenal lebih dekat Dikantin Polije.</p>
+            
+            <div class="content-box">
+                <p>Dikantin adalah platform informasi kuliner kampus Politeknik Negeri Jember (Polije) yang dirancang untuk memudahkan mahasiswa, dosen, dan staf dalam mencari makanan dan minuman favorit.</p>
+                <p>Website ini murni sebagai profil visual. Untuk memesan, kamu akan diarahkan ke aplikasi kantin mobile kami.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container"><p>&copy; 2024 Dikantin. All rights reserved.</p></div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

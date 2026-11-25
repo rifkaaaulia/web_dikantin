@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dikantin - Beranda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Panggil semua CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Dikantin">
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <!-- Dropdown Panduan -->
+                <li class="dropdown">
+                    <button class="dropdown-btn">Panduan Kantin &#9662;</button>
+                    <!-- Hanya satu div dropdown-content -->
+                    <div class="dropdown-content">
+                        <a href="panduan_pesan.html">Panduan Pesan & Transaksi</a>
+                        <a href="panduan_login.html">Tata Cara Login</a>
+                    </div>
+                </li>
+                <li><a href="menu.html">Menu & Stan</a></li>
+                <li><a href="kontak.html">Kontak & Bantuan</a></li>
+                
+                <li class="nav-btn-mobile">
+                    <a href="#" target="_blank" class="btn btn-primary">Pesan Sekarang</a>
+                </li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container hero-wrapper">
+            <div class="hero-text">
+                <h1>Selamat Datang di <br><span>Dikantin Polije</span></h1>
+                <p>Dikantin hadir sebagai pusat informasi kuliner kampus yang memudahkan mahasiswa melihat daftar menu, memilih kantin favorit, dan memesan langsung dari kantin mobile kami.</p>
+                <a href="menu.html" class="btn btn-outline">Telusuri Dikantin &nbsp; &rarr;</a>
+            </div>
+            <div class="hero-image">
+                <div class="circle-bg circle-1"></div>
+                <div class="circle-bg circle-2"></div>
+                <img src="img/hero.jpg" alt="Suasana Dikantin">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Dikantin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
